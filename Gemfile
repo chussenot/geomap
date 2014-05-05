@@ -38,3 +38,6 @@ end
 # Models
 gem 'ohm'
 gem 'ohm-contrib'
+# JSON
+gem 'json', '~> 1.8'
+gem 'bson_ext', '~> 1.9'
