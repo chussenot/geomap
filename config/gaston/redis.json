@@ -1,0 +1,23 @@
+{
+  "gaston": {
+    "redis": {
+      "host": "127.0.0.1",
+      "port": 6379,
+      "db": 0
+    }
+  },
+  "dev": {
+    "redis": {
+      "db": 1
+    }
+  },
+  "test": {
+    "redis": {
+      "db": 2
+    }
+  },
+  "production": {
+    "redis": {    
+    }
+  }
+}
