@@ -47,9 +47,12 @@ GEM
       rb-kqueue (>= 0.2)
     lumberjack (1.0.5)
     method_source (0.8.2)
+    mini_portile (0.5.3)
     msgpack (0.5.8)
     multi_json (1.9.3)
     nido (0.0.1)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     ohm (2.0.0)
       msgpack
       nido
@@ -104,6 +107,10 @@ GEM
     terminal-notifier-guard (1.5.3)
     thor (0.19.1)
     tilt (1.4.1)
+    webrat (0.7.3)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
 
 PLATFORMS
   ruby
@@ -130,3 +137,4 @@ DEPENDENCIES
   sinatra-assetpack
   sinatra-contrib
   terminal-notifier-guard (~> 1.5.3)
+  webrat

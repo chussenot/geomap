@@ -23,6 +23,7 @@ gem 'puma'
 gem 'foreman'
 
 gem 'rspec'
+gem 'webrat'
 
 group :development do
   # Handle Filesytem events
