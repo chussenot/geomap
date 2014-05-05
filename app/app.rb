@@ -3,6 +3,7 @@
 module GeoMap
   class App < Sinatra::Base
     register Sinatra::AssetPack
+    register Sinatra::Namespace
 
     set     :public_folder, Proc.new { File.join(root, "../public") }
     set     :app_file, __FILE__
@@ -30,6 +31,18 @@ module GeoMap
 
     get '/' do
       haml :index
+    end
+
+    namespace '/api/tests' do
+      get '/fruits' do
+        content_type :json
+        json(['apple','banana','pear'])
+      end
+      get '/point' do
+        content_type :json
+        p = GeoRuby::SimpleFeatures::Point.from_latlong('48.853537', '2.348305')
+        p.as_geojson()
+      end
     end
 
   end
