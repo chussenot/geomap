@@ -1,0 +1,1 @@
+This project is a simple exercise to test Geoloc stuff
