@@ -8,6 +8,10 @@ module GeoMap
     set     :app_file, __FILE__
     set     :root, File.dirname(__FILE__)
 
+    configure :development do
+      register Sinatra::Reloader
+    end
+
     assets {
       serve '/css',           from: 'assets/css'
       serve '/js',            from: 'assets/js'
