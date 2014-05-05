@@ -19,3 +19,6 @@ gem 'foreman'
 gem 'rspec'
 gem 'guard'
 
+# Models
+gem 'ohm'
+gem 'ohm-contrib'
