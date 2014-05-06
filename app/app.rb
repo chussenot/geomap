@@ -11,6 +11,8 @@ module GeoMap
 
     configure :development do
       register Sinatra::Reloader
+      use BetterErrors::Middleware
+      BetterErrors.application_root = __dir__
     end
 
     assets {

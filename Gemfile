@@ -19,7 +19,7 @@ gem 'compass'
 gem 'sass'
 gem 'haml'
 
-gem 'puma'
+gem 'thin'
 gem 'foreman'
 
 gem 'rspec'
@@ -33,6 +33,9 @@ group :development do
   gem 'rb-inotify',               '~> 0.8' ,  require: linux?
   gem 'rb-fsevent',               '~> 0.9.1', require: darwin?
   gem 'terminal-notifier-guard',  '~> 1.5.3', require: darwin12?
+  gem 'byebug'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 # Models
