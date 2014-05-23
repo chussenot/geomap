@@ -5,7 +5,7 @@ This API,
 
 * respect  **REST** rules of use
 * have coherent return **HTTP** codes (40x,50x,20x)
-* is accessible from the **'URL** https://api.DOMAIN.com/v1/* by building **URLs** from the segments listed in this document.
+* is accessible from the **'URL** https://api.DOMAIN.com/v1/ by building **URLs** from the segments listed in this document.
 
 ## HTTP status codes Overview  
 
@@ -18,11 +18,11 @@ This API,
 + **500, 502, 503, 504 Server errors** - something went wrong on Clergerie's end.
 
 ## Binary
- Pictures filetype ** PNG ** are encoded in text format ** Base64 **  directly into the JSON response.
+ Pictures filetype **PNG** are encoded in text format **Base64**  directly into the JSON response.
 
 ## User
 ### POST /users
-This ** endpoint ** to create a resource of type ** User **, an email is sent to the user with instructions to validate his account. This email contains the link to activate an account. The link is valid for a day of 3 days.
+This **endpoint** to create a resource of type **User**, an email is sent to the user with instructions to validate his account. This email contains the link to activate an account. The link is valid for a day of 3 days.
 
 + **Params:** `{email:'chussenot@gmail.com'}`
 + **Response 200** (application/json;charset=utf-8)
@@ -33,7 +33,7 @@ This ** endpoint ** to create a resource of type ** User **, an email is sent to
       }
 
 ### GET /users/{:userId}
-Return a ** User ** information about a user from their email or userId
+Return a **User** information about a user from their email or userId
 
 + **Params:** userId
 + **Response 200** (application/json;charset=utf-8)
@@ -41,7 +41,6 @@ Return a ** User ** information about a user from their email or userId
       {
         'id': '16785',
         'email': 'chussenot@gmail.com',
-        'shoeSize': '43',
         'firstName': 'Clément',
         'lastName': 'Hussenot'
         'pseudo': 'chussenot',
@@ -50,19 +49,19 @@ Return a ** User ** information about a user from their email or userId
       }
 
 ### PUT /users/{:userId}
-Update a resource ** User ** on the server by providing a comprehensive resource.
+Update a resource **User** on the server by providing a comprehensive resource.
 
 + **Params:** userId
 + **Response 200** (application/json;charset=utf-8)
 
 ### PATCH /users/{:userId}
-Update a resource ** User ** on the server providing only a few changed attributes.
+Update a resource **User** on the server providing only a few changed attributes.
 
 + **Params:** userId
 + **Response 200** (application/json;charset=utf-8)
 
 ### DELETE /users/{:userId}
-Remove a resource type ** User **
+Remove a resource type **User**
 
 + **Params:** userId
 + **Response 204** (application/json;charset=utf-8)
