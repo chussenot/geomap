@@ -27,3 +27,6 @@ $ ->
   $('.sidebar.top').sidebar('toggle')
   $('.ui.menu.views').hide()
   
+  $('.advanced').click ->
+    $(".ui.modal").modal('show')
+    

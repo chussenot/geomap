@@ -1,6 +1,7 @@
 .ui.sidebar.vertical.menu.left
-
   .ui.basic.vertical.accordion.menu
+    %item.results
+      27 Results
     .item
       %a.active.title
         %i.dropdown.icon
@@ -24,6 +25,7 @@
               .ui.radio.checkbox
                 %input{name: "size", type: "radio", value: "x-large"}/
                 %label X-Large
+            %a.advanced{href:'#'} view more...
     .item
       %a.active.title
         %i.dropdown.icon
