@@ -18,10 +18,12 @@ $ ->
   $('.ui.button.search').click ->
     $( "input.search" ).focus().val('');
     $('.sidebar.top').sidebar('toggle')
-    $('.ui.results').toggle()
+    $('.ui.menu.views').toggle()
   $("#search").submit (event) ->
     $('.sidebar.left').sidebar('toggle')
-    $('.ui.results').toggle()
+    $('.ui.menu.views').toggle()
+
   initMap()
   $('.sidebar.top').sidebar('toggle')
-  $('.ui.results').hide()
+  $('.ui.menu.views').hide()
+  
