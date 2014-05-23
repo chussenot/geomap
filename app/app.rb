@@ -20,13 +20,18 @@ module GeoMap
       serve '/js',            from: 'assets/js'
       serve '/img',           from: 'assets/img'
       serve '/components',    from: 'assets/components'
+      serve '/semantic',    from: 'assets/components/semantic-ui/build/packaged'
       css :application, [
+        'http://fonts.googleapis.com/css?family=Open+Sans',
+        '/semantic/css/semantic.css',
+        '/components/leaflet/dist/leaflet.css',
         '/css/application.css'
       ]
       js  :application, [
         '/components/jquery/dist/jquery.js',
         '/components/underscore/underscore.js',
-        '/components/polymaps/polymaps.js',
+        '/semantic/javascript/semantic.js',
+        '/components/leaflet/dist/leaflet.js',
         '/js/application.js',
       ]
     }

@@ -14,8 +14,9 @@
     "tests"
   ],
   "dependencies": {
-    "polymaps": "~2.5.1",
     "jquery": "~2.1.0",
-    "underscore": "~1.6.0"
+    "underscore": "~1.6.0",
+    "semantic-ui": "~0.17.0",
+    "leaflet": "~0.7.3"
   }
 }
