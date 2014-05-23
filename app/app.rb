@@ -30,6 +30,8 @@ module GeoMap
       js  :application, [
         '/components/jquery/dist/jquery.js',
         '/components/underscore/underscore.js',
+        '/components/backbone/backbone.js',
+        '/components/jade-runtime/jade-runtime.js',
         '/semantic/javascript/semantic.js',
         '/components/leaflet/dist/leaflet.js',
         '/js/application.js',
