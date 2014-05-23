@@ -1,5 +1,5 @@
 # encoding: utf-8
-require 'pry'
+require 'byebug'
 require 'rack/test'
 require 'webrat'
 
