@@ -20,6 +20,7 @@ module GeoMap
       serve '/js',            from: 'assets/js'
       serve '/img',           from: 'assets/img'
       serve '/components',    from: 'assets/components'
+      serve '/vendor',    from: 'assets/vendor'
       serve '/semantic',    from: 'assets/components/semantic-ui/build/packaged'
       css :application, [
         'http://fonts.googleapis.com/css?family=Open+Sans',
@@ -31,9 +32,11 @@ module GeoMap
         '/components/jquery/dist/jquery.js',
         '/components/underscore/underscore.js',
         '/components/backbone/backbone.js',
-        '/components/jade-runtime/jade-runtime.js',
+        '/vendor/jade-runtime.js',
         '/semantic/javascript/semantic.js',
         '/components/leaflet/dist/leaflet.js',
+        '/js/boot.js',
+        '/js/routers/routes.js',
         '/js/application.js',
       ]
     }

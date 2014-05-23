@@ -1,3 +1,8 @@
+global = this
+
+$ ->
+  global.app = new Routers.Main()
+
 initMap = ->
   map         = undefined
   # set up the map
